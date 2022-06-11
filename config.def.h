@@ -51,7 +51,7 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	{ "",      monocle },
 };
 
 /* key definitions */
@@ -90,7 +90,7 @@ static Key keys[] = {
     { MODKEY, XK_f, togglefloating, {0} },
 
     /* toggle fulscreen */
-    // { MODKEY|ShiftMask, XK_f, fullscreen, {0} },
+    { MODKEY|ShiftMask, XK_f, fullscreen, {0} },
 
     /* toggle statusbar */
     { MODKEY|ShiftMask, XK_b, togglebar, {0} },
